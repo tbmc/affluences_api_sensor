@@ -19,7 +19,7 @@ def get_image():
     width, height = QUALITIES.get(quality, (None, None))
 
     if width is None:
-        return "Error"
+        return "Error", 400
 
     read(width, height, blur)
     return send_file("image.jpg", mimetype="image/jpeg")
