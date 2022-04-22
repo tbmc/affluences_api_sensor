@@ -1,0 +1,7 @@
+﻿version: "3"
+services:
+  api_webcam:
+    image: api_webcam
+    container_name: api_webcam
+    build: ./
+    restart: unless-stopped
